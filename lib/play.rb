@@ -37,4 +37,7 @@ end
 
 # Define your play method below
 def play(board)
+  while board.contains("") || board.contains(" ") do
+    turn(board)
+  end
 end
